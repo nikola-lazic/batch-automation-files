@@ -13,6 +13,7 @@ This is my personal collection of Batch (.bat) and .ps1 scripts which I used for
 - [Batch Run multiple scripts](#batch-run-multiple-scripts)
 - [Batch Run Python script](#batch-run-python-script)
 - [Powershell Export directory structure to TXT](#powershell-export-directory-structure-to-txt)
+
 - [Colors for Batch scripts](#colors-for-batch-scripts)
 ---
 ### **Batch Create folder structure**
@@ -175,6 +176,13 @@ D:.
 │       │       │   ├───xpack3_install
 │       │       │   └───xpack4_install
 ```
+
+## **Batch ASCII Logo example**
+This is an example of using ASCII to draw a logo for a Project.
+</br> I used this website to generate ASCII:
+[patorjk.com](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
+<br/>Here is how it looks:
+</br>![Screenshot](./img/Batch_ASCII_Logo_example.JPG)
 
 ---
 ## **Colors for Batch scripts**
