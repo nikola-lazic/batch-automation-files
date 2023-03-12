@@ -96,7 +96,7 @@ DIR /b /a-d /s *.pdf
 DIR /b /a-d /s *.pdf *.mp4 *.jpg
 ```
 
-## **Batch List folders with their size**
+### **Batch List folders with their size**
 This script will create a .TXT file with a list of all sub-folders with their size in KB, MB, GB or TB.  This is one of my favorite scripts.</br>The found it very useful.
 This is example of exported list:
 ```
@@ -107,19 +107,19 @@ KISSsoft 2022 --- 2,2 GB
 MS Office 2016 Pro X64 --- 2,2 GB 
 Wolfram Mathematica 11.2.0.0 --- 3,3 GB 
 ```
-## **Batch Pair Bluetooth device**
+### **Batch Pair Bluetooth device**
 I have Samsung Soundbar T6-Series which is connected via Bluetooth with my pc.
 </br>After 20-30 min of inactivity, it goes into sleep mode and turn off.
 </br>It's very annoying to turn on and connect speakers a few times a day so I use this script! It's a bit slow, but less hassle. 
 </br> Requrements: Bluetooth Command Line Tools needs to be installed before using this script. You can download it [here](https://bluetoothinstaller.com/bluetooth-command-line-tools/bluetooth-sample-scripts.html).
 
-## **Box with the Title, Build date and Version**
+### **Box with the Title, Build date and Version**
 This is a template script which I used for some scripts.
 </br>File is saved with Encoding: ANSI, otherwise, it won't look good.
 </br> Here is how it looks:
 </br>![Screenshot](./img/Batch_Project_Title_Example.JPG)
 
-## **Batch Rename Space to Underscipt**
+### **Batch Rename Space to Underscipt**
 This is one of my first Batch scripts.
 </br>It will rename all *blanks* (spaces) into _(underscore).
 </br>Operation will be applied to all files, no mather of extension.
@@ -177,7 +177,7 @@ D:.
 │       │       │   └───xpack4_install
 ```
 
-## **Batch ASCII Logo example**
+### **Batch ASCII Logo example**
 This is an example of using ASCII to draw a logo for a Project.
 </br> I used this website to generate ASCII:
 [patorjk.com](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20).
