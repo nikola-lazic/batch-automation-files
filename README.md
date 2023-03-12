@@ -7,6 +7,12 @@ This is my personal collection of Batch (.bat) and .ps1 scripts which I used for
 - [Batch How to use CHOICE example](#batch-how-to-use-choice-example)
 - [Batch List files and folders in directory](#batch-list-files-and-folders-in-directory)
 - [Batch List folders with their size](#batch-list-folders-with-their-size)
+- [Batch Pair Bluetooth device](#batch-pair-bluetooth-device)
+- [Box with the Title, Build date and Version](#box-with-the-title-build-date-and-version)
+- [Batch Rename Space to Underscipt](#batch-rename-space-to-underscipt)
+- [Batch Run multiple scripts](#batch-run-multiple-scripts)
+- [Batch Run Python script](#batch-run-python-script)
+- [Powershell Export directory structure to TXT](#powershell-export-directory-structure-to-txt)
 - [Colors for Batch scripts](#colors-for-batch-scripts)
 ---
 ### **Batch Create folder structure**
@@ -27,15 +33,15 @@ name and folder structure will be created:
 ### **Batch Delete files in directory**
 This script will delete all files with predefined extension. For the example, if you want to delete filesto delete all .txt files in directory.
 For deleting files in subfolders, add /s - Subfolder
-#### Example:
+</br>Example:
 ```
 DEL /s *.bmp
 ```
+
 ### **Batch Export directory structure to TXT**
 This script will export all subfolders and list of files into one TXT file, named: generated_tree_list.txt.
-#### This was very usefull when I had to deliver project to a client.
-
-#### Example of exported list:
+</br>This was very usefull when I had to deliver project to a client.
+</br>Example of exported list:
 ```
 +---Data
     |       |   |   chunkmanifest
@@ -55,7 +61,7 @@ This is simple example of using CHOICE in Batch. It's good when we user had mult
 
 ### **Batch List files and folders in directory**
 This script will generate an TXT file with a list of all files and folders in parent folder.
-#### Example of exported list:
+</br>Example of exported list:
 ```
 .gitignore
 Batch_Create_folder_structure.bat
@@ -65,8 +71,8 @@ README.md
 List.txt
 Subfolder-1
 ```
-#### NOTES:
-For a list of all files and folders, use:
+NOTES:
+</br>For a list of all files and folders, use:
 ```
 DIR /b
 ```
@@ -89,10 +95,9 @@ DIR /b /a-d /s *.pdf
 DIR /b /a-d /s *.pdf *.mp4 *.jpg
 ```
 
-## Batch List folders with their size
-This script will create a .TXT file with a list of all sub-folders with their size in KB, MB, GB or TB.
-#### This is one of my favorite scripts. I found it very useful.
-#### This is example of exported list:
+## **Batch List folders with their size**
+This script will create a .TXT file with a list of all sub-folders with their size in KB, MB, GB or TB.  This is one of my favorite scripts.</br>The found it very useful.
+This is example of exported list:
 ```
 AutoCAD Mechanical 2019 --- 5,1 GB 
 Autodesk Inventor Pro 2018 --- 10,2 GB 
@@ -100,6 +105,75 @@ Autodesk Vault Basic 2020 x64 --- 1,2 GB
 KISSsoft 2022 --- 2,2 GB 
 MS Office 2016 Pro X64 --- 2,2 GB 
 Wolfram Mathematica 11.2.0.0 --- 3,3 GB 
+```
+## **Batch Pair Bluetooth device**
+I have Samsung Soundbar T6-Series which is connected via Bluetooth with my pc.
+</br>After 20-30 min of inactivity, it goes into sleep mode and turn off.
+</br>It's very annoying to turn on and connect speakers a few times a day so I use this script! It's a bit slow, but less hassle. 
+</br> Requrements: Bluetooth Command Line Tools needs to be installed before using this script. You can download it [here](https://bluetoothinstaller.com/bluetooth-command-line-tools/bluetooth-sample-scripts.html).
+
+## **Box with the Title, Build date and Version**
+This is a template script which I used for some scripts.
+</br>File is saved with Encoding: ANSI, otherwise, it won't look good.
+</br> Here is how it looks:
+</br>![Screenshot](./img/Batch_Project_Title_Example.JPG)
+
+## **Batch Rename Space to Underscipt**
+This is one of my first Batch scripts.
+</br>It will rename all *blanks* (spaces) into _(underscore).
+</br>Operation will be applied to all files, no mather of extension.
+</br>Example:
+```
+This file.txt
+:: will became:
+This_file.txt
+```
+
+### **Batch Run multiple scripts**
+This script will run multiple predefined scripts.
+</br> Run scripts one after another:
+```
+call script_1.bat
+call script_2.bat
+```
+Run all scripts, no matter if the previous has finished the job:
+```
+START /b script_11.bat
+START /b script_22.bat
+```
+
+### **Batch Run Python script**
+This is simple example of creating a shortcut for running a Python script.
+</br>Usualy, I put this Batch file on the desktop.
+</br>Reason: Nobody likes to type manually in CMD. :)
+```
+C:\Python\Python38-32\python.exe D:\Python\Tkinter_GUI_Example_1.py
+```
+Command have 2 parts, first is a location of python.exe and second is location of Python script.
+
+### **Powershell Export directory structure to TXT**
+Same as [Batch Export directory structure to TXT](#batch-export-directory-structure-to-txt), this script do the same thing, but in Powershell.
+</br>It look more beautiful that Batch export.
+</br>Example of exported list:
+```
+D:.
+├───common
+│   └───Battlefield 1
+│       ├───Core
+│       │   ├───codecs
+│       │   └───imageformats
+│       ├───Data
+│       │   └───Win32
+│       │       ├───installation
+│       │       │   ├───mp_install
+│       │       │   ├───mp_ravines_install
+│       │       │   ├───mp_shoveltown_install
+│       │       │   ├───mp_trench_install
+│       │       │   ├───xpack1_install
+│       │       │   ├───xpack2_install
+│       │       │   ├───xpack3-1_install
+│       │       │   ├───xpack3_install
+│       │       │   └───xpack4_install
 ```
 
 ---
@@ -115,7 +189,7 @@ Wolfram Mathematica 11.2.0.0 --- 3,3 GB
 | 6 = olive  | E = yellow  |
 | 7 = silver | F = white   |
 
-#### Example of defining color:
+</br> Example of defining color:
 ```
 :: This will give us black background and lime text.
 COLOR 0A

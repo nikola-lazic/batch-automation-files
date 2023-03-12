@@ -1,0 +1,1 @@
+Get-ChildItem | tree > Powershell_Tree_list.txt
