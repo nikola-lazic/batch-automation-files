@@ -1,5 +1,7 @@
 # **Batch Automation Scripts**
-This is my personal collection of Batch (.bat) and .ps1 scripts which I used for task automation as Mechanical Engineer. Feel free to contribute if you have something interesting.
+![batch-logo](/img/batch-logo.png) ![powershell-logo](/img/powershell-logo.png) ![robot-logo](/img/robot-automation.JPG)
+</br>This is my personal collection of Batch (.bat) and .ps1 scripts which I used for task automation as Mechanical Engineer. Feel free to contribute if you have something interesting.
+
 ## **Table of Contents**
 - [Batch Create folder structure](#batch-create-folder-structure)
 - [Batch Delete files in directory](#batch-delete-files-in-directory)
