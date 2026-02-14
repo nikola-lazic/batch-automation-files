@@ -1,5 +1,5 @@
 @ECHO OFF
-COLOR 0B
+COLOR 0E
 ECHO --------------------------------------------------
 ECHO Bluetooth pairing with Samsung Soundbar T6-Series
 ECHO --------------------------------------------------

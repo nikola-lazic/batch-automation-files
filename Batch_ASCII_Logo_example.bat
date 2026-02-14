@@ -1,5 +1,5 @@
 @ECHO OFF
-COLOR 0A
+COLOR 0E
 CLS
 TITLE ProjectTitle v.0.9
 ECHO  _                       
