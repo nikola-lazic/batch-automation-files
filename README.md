@@ -15,8 +15,13 @@
 - [Batch Run multiple scripts](#batch-run-multiple-scripts)
 - [Batch Run Python script](#batch-run-python-script)
 - [Powershell Export directory structure to TXT](#powershell-export-directory-structure-to-txt)
-
 - [Colors for Batch scripts](#colors-for-batch-scripts)
+- [Batch ASCII Logo example with CHOICE](#batch-ascii-logo-example-with-choice)
+- [Batch Colors](#batch-colors)
+- [Batch Create filename with date and time](#batch-create-filename-with-date-and-time)
+- [Batch Move files from subfolders to main folder](#batch-move-files-from-subfolders-to-main-folder)
+- [Powershell Export directory structure with filesize to TXT](#powershell-export-directory-structure-with-filesize-to-txt)
+
 ---
 ### **Batch Create folder structure**
 For every project I had always the same folder structure. User has to define a project
@@ -203,4 +208,38 @@ This is an example of using ASCII to draw a logo for a Project.
 ```
 :: This will give us black background and lime text.
 COLOR 0A
+```
+
+### **Batch ASCII Logo example with CHOICE**
+Extended version of ASCII logo example, where user can choose between multiple ASCII styles using CHOICE command.
+
+### **Batch Colors**
+Examples of using COLOR command to change background and text colors in Batch scripts.  
+Useful for visually distinguishing different parts of a script.
+
+### **Batch Create filename with date and time**
+Automatically creates a file with a name that includes current date and time.  
+Great for log files or versioning.
+```
+::Example of created file:
+
+2026-02-16_13-45-51.txt
+```
+
+### **Batch Move files from subfolders to main folder**
+Moves all files from subfolders into the main folder.  
+Practical when files accumulate in multiple subdirectories.
+
+### **Powershell Export directory structure with filesize to TXT**
+Same as standard export, but additionally writes file sizes into TXT.  
+Looks cleaner and provides more information to clients.
+```
+::Example:
+
+├── [0 MB] app_type.xml
+├── [100 MB] data.wgpdc
+├── [0 MB] game_info.xml
+├── [0 MB] game_info.xml.bak
+├── [0 MB] Licenses.txt
+├── [0 MB] loc_version.xml
 ```
