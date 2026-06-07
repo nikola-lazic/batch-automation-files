@@ -22,6 +22,7 @@
 - [Batch Move files from subfolders to main folder](#batch-move-files-from-subfolders-to-main-folder)
 - [Powershell Export directory structure with filesize to TXT](#powershell-export-directory-structure-with-filesize-to-txt)
 - [Powershell Export directory structure with files to TXT](#powershell-export-directory-structure-with-files-to-txt)
+- [Batch MP4 to MP3 with ffmpeg](#batch-mp4-to-mp3-with-ffmpeg)
 
 ---
 ### **Batch Create folder structure**
@@ -261,4 +262,18 @@ The whole tree (folders and files) is written into Powershell_Tree_list_with_fil
 ├── 03-Email
     ├── In
     ├── Out
+```
+
+### **Batch MP4 to MP3 with ffmpeg**
+Converts all MP4 files in the current folder to MP3 audio using the ffmpeg codec.  
+Handy for quickly extracting audio from videos.
+</br> Requirements: ffmpeg needs to be installed. You can install it with:
+```
+winget install ffmpeg
+```
+The script loops through every *.mp4 file and creates a matching *.mp3 file:
+```
+for %%F in (*.mp4) do (
+    ffmpeg -i "%%F" -vn -acodec libmp3lame "%%~nF.mp3"
+)
 ```
