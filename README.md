@@ -21,6 +21,7 @@
 - [Batch Create filename with date and time](#batch-create-filename-with-date-and-time)
 - [Batch Move files from subfolders to main folder](#batch-move-files-from-subfolders-to-main-folder)
 - [Powershell Export directory structure with filesize to TXT](#powershell-export-directory-structure-with-filesize-to-txt)
+- [Powershell Export directory structure with files to TXT](#powershell-export-directory-structure-with-files-to-txt)
 
 ---
 ### **Batch Create folder structure**
@@ -242,4 +243,22 @@ Looks cleaner and provides more information to clients.
 ├── [0 MB] game_info.xml.bak
 ├── [0 MB] Licenses.txt
 ├── [0 MB] loc_version.xml
+```
+
+### **Powershell Export directory structure with files to TXT**
+Same as the standard Powershell export, but this script also lists every file inside each folder, not just the subfolders.  
+The whole tree (folders and files) is written into Powershell_Tree_list_with_files.txt.
+```
+::Example:
+
+├── 01-Reference
+    ├── Client
+        ├── drawing.dwg
+        ├── notes.txt
+    ├── Older_projects
+├── 02-Doc
+    ├── manual.pdf
+├── 03-Email
+    ├── In
+    ├── Out
 ```
